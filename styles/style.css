@@ -29,6 +29,70 @@ main{
     
 }
 
+
+/* ====================*\
+
+ NAV BAR
+
+ \*====================*/
+ .containerNav{
+    background-color:#562EFF;
+    width: 1440px;
+    height: 94px;
+ }
+.navbar{ /*Grid*/
+    margin-left:270px ;
+    margin-right: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.navbar-left{ /*flex*/
+    padding-top: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items:center ;
+    justify-content: flex-start;
+
+}
+.navbar-left img{
+    Width: 40.42px;
+    Height: 51px;
+
+}
+.logo-name{
+    color: whitesmoke;
+    width: 54px;
+    height: 36px;
+    margin-left:15px;
+}
+.navbar-right{ /*flex*/
+    padding-top: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content:flex-end;
+
+}
+.ul-class li{
+    display: inline;
+    margin-left: 36px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height :  24px;  /*Important part to align ul list with image in it*/
+}
+
+
+.nav-item img{
+    height: 51px;
+    width: 51px;
+    vertical-align: middle;  /*Important part to align ul list with image in it*/
+}
+
+
+
 /* ====================*\
 
  Top Players Style 
@@ -55,7 +119,7 @@ main{
 }
 .player{
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 
 .player img{
