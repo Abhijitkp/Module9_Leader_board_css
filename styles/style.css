@@ -1,0 +1,177 @@
+/* fonts from google poppins medium 500*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* =========================*\
+
+ Common Style  or utilities
+
+ \*=========================*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main{
+    display: flex;
+    flex-direction: column;/*It will make the two signe top and bottom what we need*/
+    /* justify-content: center; */ /*It will make the two section align side by side*/
+    align-items: center ;/*It will make the things vertically center*/
+   
+
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding-left: 30px ;
+    margin-top:21px;
+    border-radius: 5px;
+    
+}
+
+/* ====================*\
+
+ Top Players Style 
+
+ \*====================*/
+
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.top-players{
+    margin-bottom: 30px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
+
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.player img{
+    height: 56px;
+    width: 56px;
+}
+
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+    
+}
+
+/* ====================*\
+
+ Top blog Style 
+
+ \*====================*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-bottom: 45px;
+}
+
+ .blog{
+    display: flex;
+}
+
+.blog .thumbnail img{
+    width: 177px;
+   height: 117px;
+}
+
+.blog-info{
+    margin-left: 16px;
+}
+
+.blog-title{
+    font-size: 18px;
+}
+.blog-author{
+     color: #9F9F9F;
+     font-size: 16px;
+}
+
+.blog-author a{
+     text-decoration: none;
+     font-size: 16px;
+     color: #562EFF;
+ }
+
+
+/* ====================*\
+
+ Latest course Style 
+
+ \*====================*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    margin-bottom: 25px;
+    margin-right: 51px;
+    
+}
+ .course{
+     padding-left: 10px;
+     padding-right: 17px;
+     padding-top : 11px;
+     border-radius: 15px;
+     box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+     /* filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));; */
+ }
+ .course .course-banner img{
+    width: 224px;
+    height: 104px;
+ }
+ .course-details h2{
+     font-size: 21px;;
+ }
+ .course-author a{
+     text-decoration: none;
+     color: #ED6B4F;
+     ;
+ }
+ .course-info{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+
+.fa-star{
+    font-size: 12px;
+}
+
+ .fa-star.filled{ /*no gap between two glasess*/
+     color: #FFC014;
+ }
+ .fa-star.empty{ /*no gap between two glasess*/
+     color: #AEAEAE;
+     opacity: .2px;
+
+ }
+ .fa-clock{
+     color: #FF4A60;
+
+ }
+ .course-duration{
+     padding: 5px;
+     background-color: #FFE4E8;
+     border-radius: 15px;
+
+ }
