@@ -175,3 +175,65 @@ hr{
      border-radius: 15px;
 
  }
+
+ /* ==================== *\
+
+    Media Queries
+
+ \* ==================== */
+
+
+ /* ==================== *\
+
+    Mobile Devices
+
+ \* ==================== */
+
+@media only screen and (max-width: 688px){
+
+    /* By default the container width is set to 870px which is larger than 688px not right for mobile devies */
+
+    /* This width is 100% out  688px */
+    .container{ 
+        width: 100%;      
+    }
+
+    .players, 
+    .blogs,
+    .courses{
+        
+        grid-template-columns: repeat(1,1fr); /*If screen size in 688px it will create coloumn 1 of 1fr unit*/
+    }
+    .player,
+    .blog{
+        flex-direction: column;
+    }
+
+
+    /*This is just to do some alignment work
+    .courses{ 
+        display: none; 
+    }*/
+}
+
+/* ==================== *\
+
+    Tablet Devices and pad
+
+ \* ==================== */
+
+ @media only screen and  (min-width :688px) and (max-width:992px){
+    .container{ 
+        width: 100%;      
+    }
+    .players, 
+    .courses
+    {
+        grid-template-columns: repeat(2,1fr);
+        
+    
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+ }
